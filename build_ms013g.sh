@@ -7,7 +7,7 @@ rm -rf $OUT_DIR
 mkdir $OUT_DIR
 
 make -C $(pwd) O=$OUT_DIR msm8226-sec_ms013g_defconfig SELINUX_DEFCONFIG=selinux_defconfig
-time make -C $(pwd) O=$OUT_DIR
+time make -C $(pwd) O=$OUT_DIR -j$1
 
 tools/dtbTool -s 2048 -o output/arch/arm/boot/dt.img -p output/scripts/dtc/ output/arch/arm/boot/
 
