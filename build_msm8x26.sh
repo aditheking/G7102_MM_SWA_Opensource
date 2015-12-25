@@ -1,6 +1,7 @@
 #!/bin/bash
 # MSM8X26 L release kernel build script v0.3
 # nc.chaudhary@samsung.com
+# aapav01@gmail.com <Customized>
 
 BUILD_TOP_DIR=..
 BUILD_KERNEL_DIR=$(pwd)
