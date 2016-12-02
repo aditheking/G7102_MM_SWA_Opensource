@@ -1,0 +1,447 @@
+
+==============================================
+START : FUNC_BUILD_KERNEL
+==============================================
+
+build project=ms013g_eur
+build common config=msm8226-sec_defconfig 
+build variant config=msm8226-sec_ms013g_eur_defconfig 
+build secure option= 
+build SEANDROID option= 
+make: Entering directory `/mnt/G7102_MM_SWA_Opensource'
+  GEN     /mnt/okernel/ms013g_eur/Makefile
+sound/soc/codecs/audience/Kconfig:40:warning: type of 'SND_SOC_ES_SLIM' redefined from 'boolean' to 'tristate'
+sound/soc/codecs/audience/Kconfig:43:warning: type of 'SND_SOC_ES_I2C' redefined from 'boolean' to 'tristate'
+sound/soc/codecs/audience/Kconfig:44:warning: choice value used outside its choice group
+sound/soc/codecs/audience/Kconfig:41:warning: choice value used outside its choice group
+arch/arm/configs/msm8226-sec_defconfig:224:warning: override: reassigning to symbol CFG80211_INTERNAL_REGDB
+arch/arm/configs/msm8226-sec_defconfig:328:warning: override: reassigning to symbol MSM_CPP
+arch/arm/configs/msm8226-sec_defconfig:494:warning: override: reassigning to symbol SWITCH
+arch/arm/configs/msm8226-sec_defconfig:495:warning: override: reassigning to symbol COMPACTION
+arch/arm/configs/msm8226-sec_defconfig:607:warning: unexpected data
+arch/arm/configs/msm8226-sec_defconfig:610:warning: unexpected data
+arch/arm/configs/msm8226-sec_defconfig:623:warning: unexpected data
+warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
+arch/arm/configs/selinux_defconfig:1:warning: override: reassigning to symbol EXT2_FS_XATTR
+arch/arm/configs/selinux_defconfig:4:warning: override: reassigning to symbol EXT4_FS_SECURITY
+arch/arm/configs/selinux_defconfig:5:warning: override: reassigning to symbol AUDIT
+arch/arm/configs/selinux_defconfig:7:warning: override: reassigning to symbol SECURITY
+arch/arm/configs/selinux_defconfig:8:warning: override: reassigning to symbol LSM_MMAP_MIN_ADDR
+arch/arm/configs/selinux_defconfig:9:warning: override: reassigning to symbol SECURITY_NETWORK
+arch/arm/configs/selinux_defconfig:10:warning: override: reassigning to symbol SECURITY_SELINUX
+arch/arm/configs/selinux_defconfig:13:warning: symbol value 'y' invalid for SECURITY_SELINUX_CHECKREQPROT_VALUE
+arch/arm/configs/selinux_defconfig:15:warning: override: reassigning to symbol NF_CONNTRACK_SECMARK
+arch/arm/configs/selinux_defconfig:16:warning: override: reassigning to symbol NETFILTER_XT_TARGET_CONNSECMARK
+arch/arm/configs/selinux_defconfig:18:warning: override: reassigning to symbol IP_NF_SECURITY
+arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:20:warning: override: reassigning to symbol MSM_VIDC_V4L2
+arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:24:warning: override: reassigning to symbol SEC_NFC_I2C
+arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:59:warning: override: reassigning to symbol INPUT_GPIO
+arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:83:warning: override: reassigning to symbol USB_ANDROID_SAMSUNG_MTP
+arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:113:warning: override: reassigning to symbol SEC_THERMISTOR
+warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
+boolean symbol SND_SOC_MAX98506 tested for 'm'? test forced to 'n'
+KCONFIG_SELINUX(arch/arm/configs/selinux_defconfig)
+KCONFIG_LOG_SELINUX((null))
+KCONFIG_TIMA((null))
+KCONFIG_VARIANT(arch/arm/configs/msm8226-sec_ms013g_eur_defconfig)
+KCONFIG_DEBUG((null))
+#
+# configuration written to .config
+#
+make: Leaving directory `/mnt/G7102_MM_SWA_Opensource'
+make: Entering directory `/mnt/G7102_MM_SWA_Opensource'
+  GEN     /mnt/okernel/ms013g_eur/Makefile
+scripts/kconfig/conf --silentoldconfig Kconfig
+sound/soc/codecs/audience/Kconfig:40:warning: type of 'SND_SOC_ES_SLIM' redefined from 'boolean' to 'tristate'
+sound/soc/codecs/audience/Kconfig:43:warning: type of 'SND_SOC_ES_I2C' redefined from 'boolean' to 'tristate'
+sound/soc/codecs/audience/Kconfig:44:warning: choice value used outside its choice group
+sound/soc/codecs/audience/Kconfig:41:warning: choice value used outside its choice group
+warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
+warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
+boolean symbol SND_SOC_MAX98506 tested for 'm'? test forced to 'n'
+#
+# configuration written to .config
+#
+  GEN     /mnt/okernel/ms013g_eur/Makefile
+  CHK     include/linux/version.h
+/mnt/G7102_MM_SWA_Opensource/drivers/gpu/gpu_sysfs/Kbuild:29: **** Make sure target file is defined. Check the TARGET and GPU configs in Makefile and Kernel Config. Module won't work without target file. ****
+  Using /mnt/G7102_MM_SWA_Opensource as source for kernel
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+  CC      scripts/mod/empty.o
+  HOSTCC  scripts/mod/mk_elfconfig
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTCC  scripts/selinux/genheaders/genheaders
+  HOSTCC  scripts/kallsyms
+  HOSTCC  scripts/selinux/mdp/mdp
+  HOSTCC  scripts/conmakehash
+make[2]: `include/generated/mach-types.h' is up to date.
+  HOSTCC  scripts/mod/modpost.o
+  CC      kernel/bounds.s
+  GEN     include/generated/bounds.h
+  CC      arch/arm/kernel/asm-offsets.s
+  HOSTCC  scripts/mod/sumversion.o
+  GEN     include/generated/asm-offsets.h
+  CALL    /mnt/G7102_MM_SWA_Opensource/scripts/checksyscalls.sh
+grep: /mnt/G7102_MM_SWA_Opensource/scripts/../arch/x86/syscalls/syscall_32.tbl: No such file or directory
+  HOSTLD  scripts/mod/modpost
+  HOSTCC  usr/gen_init_cpio
+  CC      init/main.o
+  CC      arch/arm/kernel/elf.o
+  CC      arch/arm/vfp/vfpmodule.o
+  GEN     usr/initramfs_data.cpio
+  AS      usr/initramfs_data.o
+  AS      arch/arm/kernel/entry-armv.o
+  LD      usr/built-in.o
+  AS      arch/arm/kernel/entry-common.o
+  CC      arch/arm/mm/dma-mapping.o
+  CC      arch/arm/kernel/irq.o
+  AS      arch/arm/vfp/entry.o
+  AS      arch/arm/vfp/vfphw.o
+  CC      arch/arm/vfp/vfpsingle.o
+  CC      arch/arm/kernel/opcodes.o
+  CC      arch/arm/kernel/process.o
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/do_mounts.o
+  CC      arch/arm/vfp/vfpdouble.o
+  CC      arch/arm/mm/extable.o
+  CC      arch/arm/mm/fault.o
+  CC      init/do_mounts_rd.o
+  CC      arch/arm/kernel/ptrace.o
+  LD      arch/arm/vfp/vfp.o
+  LD      arch/arm/vfp/built-in.o
+  CC      arch/arm/kernel/return_address.o
+  CC      init/do_mounts_initrd.o
+/mnt/G7102_MM_SWA_Opensource/arch/arm/kernel/return_address.c:62:2: warning: #warning "TODO: return_address should use unwind tables" [-Wcpp]
+ #warning "TODO: return_address should use unwind tables"
+  ^
+  CC      arch/arm/mm/init.o
+  CC      init/initramfs.o
+/mnt/G7102_MM_SWA_Opensource/arch/arm/kernel/return_address.c:62:2: warning: #warning "TODO: return_address should use unwind tables" [-Wcpp]
+ #warning "TODO: return_address should use unwind tables"
+  ^
+  CC      arch/arm/kernel/sched_clock.o
+  CC      init/calibrate.o
+  CC      arch/arm/kernel/setup.o
+  CC      arch/arm/mm/iomap.o
+  CC      init/version.o
+  CC      arch/arm/mm/fault-armv.o
+  CC      arch/arm/common/gic.o
+  LD      init/mounts.o
+  LD      init/built-in.o
+  CC      arch/arm/mm/flush.o
+  CC      arch/arm/mm/idmap.o
+  CC      arch/arm/kernel/signal.o
+  CC      arch/arm/mm/ioremap.o
+  CC      arch/arm/kernel/stacktrace.o
+  CC      arch/arm/mm/mmap.o
+  LD      arch/arm/common/built-in.o
+  LD      arch/arm/net/built-in.o
+  AS      arch/arm/crypto/aes-armv4.o
+  CC      arch/arm/crypto/aes_glue.o
+  CC      arch/arm/kernel/sys_arm.o
+  CC      arch/arm/kernel/time.o
+  AS      arch/arm/crypto/sha1-armv4-large.o
+  CC      arch/arm/crypto/sha1_glue.o
+  CC      arch/arm/mm/pgd.o
+  CC      arch/arm/mm/mmu.o
+  CC      arch/arm/kernel/traps.o
+  LD      arch/arm/crypto/aes-arm.o
+  LD      arch/arm/crypto/sha1-arm.o
+  LD      arch/arm/crypto/built-in.o
+  CC      arch/arm/kernel/cpuidle.o
+  CC      arch/arm/kernel/armksyms.o
+  CC      arch/arm/kernel/module.o
+  AS      arch/arm/kernel/sleep.o
+  CC      arch/arm/kernel/suspend.o
+  CC      arch/arm/kernel/smp.o
+  CC      arch/arm/kernel/smp_tlb.o
+  CC      arch/arm/kernel/smp_scu.o
+  CC      arch/arm/mm/vmregion.o
+  CC      arch/arm/mach-msm/io.o
+  CC      arch/arm/perfmon/perf-function-hooks.o
+  CC      arch/arm/kernel/arch_timer.o
+  CC      arch/arm/mm/proc-syms.o
+  CC      arch/arm/mach-msm/dma.o
+  LD      arch/arm/perfmon/built-in.o
+  CC      kernel/fork.o
+  CC      arch/arm/mm/alignment.o
+  CC      arch/arm/kernel/kprobes.o
+  CC      arch/arm/mach-msm/memory.o
+  CC      arch/arm/kernel/kprobes-common.o
+  CC      arch/arm/mm/highmem.o
+  CC      arch/arm/kernel/patch.o
+  CC      arch/arm/mach-msm/clock.o
+  CC      arch/arm/kernel/kprobes-arm.o
+  AS      arch/arm/mm/abort-ev7.o
+  AS      arch/arm/mm/pabort-v7.o
+  AS      arch/arm/mm/cache-v7.o
+  CC      arch/arm/mm/copypage-v6.o
+  CC      arch/arm/kernel/unwind.o
+  CC      arch/arm/mm/context.o
+  CC      kernel/exec_domain.o
+  AS      arch/arm/mm/tlb-v7.o
+  CC      arch/arm/mach-msm/clock-voter.o
+  AS      arch/arm/mm/proc-v7.o
+  LD      arch/arm/mm/built-in.o
+  CC      arch/arm/kernel/devtree.o
+  CC      arch/arm/mach-msm/clock-dummy.o
+  CC      arch/arm/mach-msm/clock-generic.o
+  CC      arch/arm/mach-msm/modem_notifier.o
+  CC      arch/arm/kernel/swp_emulate.o
+  CC      kernel/panic.o
+  CC      arch/arm/mach-msm/board-dt.o
+  CC      arch/arm/mach-msm/nohlt.o
+  CC      arch/arm/kernel/hw_breakpoint.o
+  CC      kernel/printk.o
+  CC      arch/arm/mach-msm/clock-debug.o
+  CC      kernel/cpu.o
+  CC      arch/arm/mach-msm/acpuclock.o
+  CC      arch/arm/kernel/pmu.o
+  CC      arch/arm/mach-msm/clock-a7.o
+  CC      mm/filemap.o
+  CC      arch/arm/mach-msm/perf_trace_counters.o
+  CC      arch/arm/kernel/perf_event.o
+  CC      kernel/exit.o
+  CC      arch/arm/mach-msm/perf_debug.o
+  AS      arch/arm/mach-msm/headsmp.o
+  CC      arch/arm/mach-msm/platsmp.o
+  CC      arch/arm/mach-msm/hotplug.o
+  AS      arch/arm/mach-msm/idle-v7.o
+  CC      arch/arm/mach-msm/smd.o
+  CC      arch/arm/kernel/topology.o
+  CC      mm/mempool.o
+  CC      arch/arm/kernel/io.o
+  CC      kernel/itimer.o
+  AS      arch/arm/kernel/head.o
+  CC      arch/arm/kernel/init_task.o
+  CC      mm/oom_kill.o
+  TIMEC   kernel/timeconst.h
+Can't use 'defined(@array)' (Maybe you should just omit the defined()?) at /mnt/G7102_MM_SWA_Opensource/kernel/timeconst.pl line 373.
+make[2]: *** [kernel/timeconst.h] Error 255
+make[1]: *** [kernel] Error 2
+make[1]: *** Waiting for unfinished jobs....
+  LDS     arch/arm/kernel/vmlinux.lds
+  CC      arch/arm/mach-msm/smd_debug.o
+  LD      arch/arm/kernel/built-in.o
+  CC      arch/arm/mach-msm/remote_spinlock.o
+  CC      arch/arm/mach-msm/smd_private.o
+/tmp/ccRG1SrP.s: Assembler messages:
+/tmp/ccRG1SrP.s:178: Warning: swp{b} use is deprecated for ARMv6 and ARMv7
+/tmp/ccRG1SrP.s:206: Warning: swp{b} use is deprecated for ARMv6 and ARMv7
+  CC      mm/fadvise.o
+  CC      arch/arm/mach-msm/smem.o
+  CC      arch/arm/mach-msm/smd_init_dt.o
+  CC      mm/maccess.o
+  CC      arch/arm/mach-msm/smd_init_plat.o
+  CC      arch/arm/mach-msm/smp2p.o
+  CC      mm/page_alloc.o
+  CC      mm/page-writeback.o
+  CC      arch/arm/mach-msm/smp2p_debug.o
+  CC      arch/arm/mach-msm/smp2p_gpio.o
+  CC      mm/readahead.o
+  CC      arch/arm/mach-msm/smp2p_loopback.o
+  CC      mm/swap.o
+  CC      arch/arm/mach-msm/smp2p_test.o
+  CC      mm/truncate.o
+  CC      arch/arm/mach-msm/smp2p_gpio_test.o
+  CC      mm/vmscan.o
+  CC      mm/shmem.o
+  CC      mm/prio_tree.o
+  CC      arch/arm/mach-msm/smp2p_spinlock_test.o
+  CC      mm/util.o
+  CC      arch/arm/mach-msm/scm.o
+  CC      arch/arm/mach-msm/scm-boot.o
+  CC      arch/arm/mach-msm/scm-mpu.o
+  CC      arch/arm/mach-msm/scm-xpu.o
+  CC      mm/mmzone.o
+  CC      arch/arm/mach-msm/peripheral-loader.o
+  CC      mm/vmstat.o
+  CC      mm/backing-dev.o
+  CC      arch/arm/mach-msm/scm-pas.o
+  CC      mm/page_isolation.o
+  CC      arch/arm/mach-msm/pil-q6v5.o
+  CC      arch/arm/mach-msm/pil-q6v5-lpass.o
+  CC      mm/mm_init.o
+  CC      arch/arm/mach-msm/pil-msa.o
+  CC      mm/mmu_context.o
+  CC      arch/arm/mach-msm/pil-q6v5-mss.o
+  CC      arch/arm/mach-msm/pil-pronto.o
+  CC      arch/arm/mach-msm/pil-venus.o
+  CC      mm/percpu.o
+  CC      mm/compaction.o
+  CC      arch/arm/mach-msm/bam_dmux.o
+  CC      arch/arm/mach-msm/smem_log.o
+In file included from /mnt/G7102_MM_SWA_Opensource/include/linux/swap.h:4:0,
+                 from /mnt/G7102_MM_SWA_Opensource/mm/compaction.c:10:
+/mnt/G7102_MM_SWA_Opensource/mm/compaction.c: In function 'isolate_migratepages_range':
+/mnt/G7102_MM_SWA_Opensource/include/linux/spinlock.h:229:3: warning: 'flags' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _raw_spin_unlock_irqrestore(lock, flags); \
+   ^
+/mnt/G7102_MM_SWA_Opensource/mm/compaction.c:451:16: note: 'flags' was declared here
+  unsigned long flags;
+                ^
+  CC      arch/arm/mach-msm/ipc_logging.o
+  CC      mm/fremap.o
+  CC      arch/arm/mach-msm/ipc_logging_debug.o
+  CC      mm/highmem.o
+  CC      arch/arm/mach-msm/socinfo.o
+  CC      arch/arm/mach-msm/smd_tty.o
+  CC      mm/madvise.o
+  CC      arch/arm/mach-msm/smd_qmi.o
+  CC      mm/memory.o
+  CC      arch/arm/mach-msm/smd_pkt.o
+  CC      arch/arm/mach-msm/smd_nmea.o
+  CC      arch/arm/mach-msm/reset_modem.o
+  CC      arch/arm/mach-msm/ipc_router_smd_xprt.o
+  CC      arch/arm/mach-msm/ipc_router.o
+  CC      arch/arm/mach-msm/ipc_socket.o
+  CC      arch/arm/mach-msm/msm_qmi_interface.o
+  MKCAP   arch/arm/mach-msm/smd_rpc_sym.c
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_core.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_fabric.o
+  CC      mm/mincore.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr.o
+  CC      mm/mlock.o
+  CC      arch/arm/mach-msm/pm-boot.o
+  CC      arch/arm/mach-msm/pm-stats.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_config.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_v2.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_arb.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_bimc.o
+  CC      mm/mmap.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_tal.o
+  CC      arch/arm/mach-msm/qdsp6v2/dsp_debug.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_noc.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_of.o
+  CC      arch/arm/mach-msm/qdsp6v2/voice_svc.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_rpm_smd.o
+  CC      arch/arm/mach-msm/qdsp6v2/aac_in.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_id.o
+  CC      mm/mprotect.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_dbg.o
+  CC      arch/arm/mach-msm/spm-v2.o
+  CC      arch/arm/mach-msm/qdsp6v2/qcelp_in.o
+  CC      mm/mremap.o
+  CC      arch/arm/mach-msm/spm_devices.o
+  CC      arch/arm/mach-msm/qdsp6v2/evrc_in.o
+  LD      arch/arm/mach-msm/msm_bus/built-in.o
+  CC      arch/arm/mach-msm/keypad-surf-ffa.o
+  CC      mm/msync.o
+  CC      arch/arm/mach-msm/boot_stats.o
+  CC      arch/arm/mach-msm/rpm-regulator-smd.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrnb_in.o
+  CC      arch/arm/mach-msm/spm-regulator.o
+  CC      mm/rmap.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils.o
+  CC      arch/arm/mach-msm/subsystem_notif.o
+  CC      arch/arm/mach-msm/subsystem_restart.o
+  CC      arch/arm/mach-msm/ramdump.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wma.o
+  CC      mm/vmalloc.o
+  CC      arch/arm/mach-msm/sysmon.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wmapro.o
+  CC      mm/pagewalk.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_aac.o
+  CC      mm/pgtable-generic.o
+  CC      mm/process_vm_access.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_multi_aac.o
+  CC      mm/init-mm.o
+  CC      mm/bootmem.o
+  CC      mm/memblock.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils_aio.o
+  CC      arch/arm/mach-msm/msm_watchdog_v2.o
+  CC      mm/bounce.o
+  CC      mm/page_io.o
+  CC      mm/swap_state.o
+  CC      mm/swapfile.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v2.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v2_aio.o
+  CC      arch/arm/mach-msm/qdsp6v2/msm_audio_ion.o
+  CC      arch/arm/mach-msm/msm_memory_dump.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_mp3.o
+  CC      mm/frontswap.o
+  CC      mm/zswap.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrnb.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwb.o
+  CC      arch/arm/mach-msm/bms-batterydata.o
+  CC      mm/dmapool.o
+  CC      arch/arm/mach-msm/bms-batterydata-desay.o
+  CC      arch/arm/mach-msm/batterydata-lib.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwbplus.o
+  CC      mm/slub.o
+  CC      mm/migrate.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_evrc.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-4450mah.o
+  CC      mm/zsmalloc.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_qcelp.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrwb_in.o
+  CC      arch/arm/mach-msm/bms-batterydata-lis-samsung-4450mah.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-6800mah.o
+  CC      arch/arm/mach-msm/qdsp6v2/adsp-loader.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-2800mah.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-2100mah.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-2000mah.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-1720mah.o
+  CC      arch/arm/mach-msm/bms-batterydata-oem.o
+  CC      arch/arm/mach-msm/bms-batterydata-qrd-4v35-2000mah.o
+  CC      arch/arm/mach-msm/bms-batterydata-qrd-4v2-1300mah.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-2100mah_4400mV.o
+  CC      arch/arm/mach-msm/bms-batterydata-samsung-2600mah.o
+  CC      arch/arm/mach-msm/gdsc.o
+  CC      arch/arm/mach-msm/board-8226.o
+  LD      arch/arm/mach-msm/qdsp6v2/built-in.o
+  CC      arch/arm/mach-msm/board-ms01-gpiomux.o
+  CC      arch/arm/mach-msm/clock-local2.o
+  CC      arch/arm/mach-msm/clock-pll.o
+  CC      arch/arm/mach-msm/clock-8226.o
+  CC      arch/arm/mach-msm/clock-rpm.o
+  CC      arch/arm/mach-msm/clock-mdss-8974.o
+  CC      arch/arm/mach-msm/acpuclock-8226.o
+  CC      arch/arm/mach-msm/acpuclock-cortex.o
+  CC      arch/arm/mach-msm/msm-pm.o
+  CC      arch/arm/mach-msm/pm-data.o
+  LD      mm/built-in.o
+  CC      arch/arm/mach-msm/ext-buck-control.o
+  CC      arch/arm/mach-msm/rpm-smd.o
+  CC      arch/arm/mach-msm/lpm_levels.o
+  CC      arch/arm/mach-msm/mpm-of.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      arch/arm/mach-msm/rpm_rbcpr_stats_v2.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      arch/arm/mach-msm/tz_log.o
+  CC      arch/arm/mach-msm/sec-switch.o
+  CC      arch/arm/mach-msm/iommu_domains.o
+  CC      arch/arm/mach-msm/ocmem.o
+  CC      arch/arm/mach-msm/ocmem_allocator.o
+  CC      arch/arm/mach-msm/ocmem_notifier.o
+  CC      arch/arm/mach-msm/ocmem_sched.o
+  CC      arch/arm/mach-msm/ocmem_api.o
+  CC      arch/arm/mach-msm/ocmem_rdm.o
+  CC      arch/arm/mach-msm/ocmem_core.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  CC      arch/arm/mach-msm/gpiomux.o
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  CC      arch/arm/mach-msm/msm_rtb.o
+  CC      arch/arm/mach-msm/wdog_debug.o
+  CC      arch/arm/mach-msm/msm_mem_hole.o
+  CC      arch/arm/mach-msm/smcmod.o
+  CC      arch/arm/mach-msm/cpr-regulator.o
+  CC      arch/arm/mach-msm/cpufreq.o
+  CC      arch/arm/mach-msm/devfreq_cpubw.o
+  CC      arch/arm/mach-msm/sec_bsp.o
+  CC      arch/arm/mach-msm/sec_thermistor_8226.o
+  CC      arch/arm/mach-msm/msm8226-thermistor.o
+  CC [M]  arch/arm/mach-msm/dma_test.o
+  CC      arch/arm/mach-msm/smd_rpc_sym.o
+  LD      arch/arm/mach-msm/built-in.o
+make: *** [sub-make] Error 2
+make: Leaving directory `/mnt/G7102_MM_SWA_Opensource'
