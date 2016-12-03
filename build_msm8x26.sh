@@ -109,7 +109,7 @@ FUNC_APPEND_DTB()
 }
 
 INSTALLED_DTIMAGE_TARGET=${BUILD_KERNEL_OUT_DIR}/dt.img
-DTBTOOL=$BUILD_TOP_DIR/samsung_ms01lte/tools/dtbTool
+DTBTOOL=$(pwd)/dtbtool/
 
 FUNC_BUILD_DTIMAGE_TARGET()
 {
@@ -124,7 +124,7 @@ FUNC_BUILD_DTIMAGE_TARGET()
 		if ! [ -d $BUILD_TOP_DIR/out/host/linux-x86/bin ] ; then
 			mkdir -p $BUILD_TOP_DIR/out/host/linux-x86/bin
 		fi
-		cp $BUILD_TOP_DIR/kernel/tools/dtbTool $DTBTOOL
+		cp $(pwd)/dtbtool/ $DTBTOOL
 	fi
 
 	BOARD_KERNEL_PAGESIZE=2048

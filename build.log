@@ -3,51 +3,58 @@
 START : FUNC_BUILD_KERNEL
 ==============================================
 
-build project=ms013g_eur
+build project=ms013g_ms013g
 build common config=msm8226-sec_defconfig 
-build variant config=msm8226-sec_ms013g_eur_defconfig 
+build variant config=msm8226-sec_ms013g_ms013g_defconfig 
 build secure option= 
 build SEANDROID option= 
 make: Entering directory `/mnt/G7102_MM_SWA_Opensource'
-  GEN     /mnt/okernel/ms013g_eur/Makefile
+  GEN     /mnt/okernel/ms013g/Makefile
 sound/soc/codecs/audience/Kconfig:40:warning: type of 'SND_SOC_ES_SLIM' redefined from 'boolean' to 'tristate'
 sound/soc/codecs/audience/Kconfig:43:warning: type of 'SND_SOC_ES_I2C' redefined from 'boolean' to 'tristate'
 sound/soc/codecs/audience/Kconfig:44:warning: choice value used outside its choice group
 sound/soc/codecs/audience/Kconfig:41:warning: choice value used outside its choice group
-arch/arm/configs/msm8226-sec_defconfig:224:warning: override: reassigning to symbol CFG80211_INTERNAL_REGDB
-arch/arm/configs/msm8226-sec_defconfig:328:warning: override: reassigning to symbol MSM_CPP
-arch/arm/configs/msm8226-sec_defconfig:494:warning: override: reassigning to symbol SWITCH
-arch/arm/configs/msm8226-sec_defconfig:495:warning: override: reassigning to symbol COMPACTION
 warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
 arch/arm/configs/selinux_defconfig:1:warning: override: reassigning to symbol EXT2_FS_XATTR
+arch/arm/configs/selinux_defconfig:2:warning: override: reassigning to symbol EXT2_FS_SECURITY
+arch/arm/configs/selinux_defconfig:3:warning: override: reassigning to symbol EXT4_FS_XATTR
 arch/arm/configs/selinux_defconfig:4:warning: override: reassigning to symbol EXT4_FS_SECURITY
 arch/arm/configs/selinux_defconfig:5:warning: override: reassigning to symbol AUDIT
+arch/arm/configs/selinux_defconfig:6:warning: override: reassigning to symbol AUDITSYSCALL
 arch/arm/configs/selinux_defconfig:7:warning: override: reassigning to symbol SECURITY
 arch/arm/configs/selinux_defconfig:8:warning: override: reassigning to symbol LSM_MMAP_MIN_ADDR
 arch/arm/configs/selinux_defconfig:9:warning: override: reassigning to symbol SECURITY_NETWORK
 arch/arm/configs/selinux_defconfig:10:warning: override: reassigning to symbol SECURITY_SELINUX
+arch/arm/configs/selinux_defconfig:11:warning: override: reassigning to symbol SECURITY_SELINUX_DEVELOP
+arch/arm/configs/selinux_defconfig:12:warning: override: reassigning to symbol SECURITY_SELINUX_AVC_STATS
+arch/arm/configs/selinux_defconfig:13:warning: override: reassigning to symbol SECURITY_SELINUX_CHECKREQPROT_VALUE
 arch/arm/configs/selinux_defconfig:13:warning: symbol value 'y' invalid for SECURITY_SELINUX_CHECKREQPROT_VALUE
+arch/arm/configs/selinux_defconfig:14:warning: override: reassigning to symbol NETWORK_SECMARK
 arch/arm/configs/selinux_defconfig:15:warning: override: reassigning to symbol NF_CONNTRACK_SECMARK
 arch/arm/configs/selinux_defconfig:16:warning: override: reassigning to symbol NETFILTER_XT_TARGET_CONNSECMARK
+arch/arm/configs/selinux_defconfig:17:warning: override: reassigning to symbol NETFILTER_ADVANCED
 arch/arm/configs/selinux_defconfig:18:warning: override: reassigning to symbol IP_NF_SECURITY
-arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:20:warning: override: reassigning to symbol MSM_VIDC_V4L2
-arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:24:warning: override: reassigning to symbol SEC_NFC_I2C
-arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:59:warning: override: reassigning to symbol INPUT_GPIO
-arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:83:warning: override: reassigning to symbol USB_ANDROID_SAMSUNG_MTP
-arch/arm/configs/msm8226-sec_ms013g_eur_defconfig:113:warning: override: reassigning to symbol SEC_THERMISTOR
+arch/arm/configs/selinux_defconfig:19:warning: override: reassigning to symbol DEFAULT_SECURITY
+arch/arm/configs/selinux_defconfig:20:warning: override: reassigning to symbol DEFAULT_SECURITY
+arch/arm/configs/selinux_defconfig:21:warning: override: reassigning to symbol FAT_VIRTUAL_XATTR
+arch/arm/configs/selinux_defconfig:22:warning: override: reassigning to symbol FAT_VIRTUAL_XATTR_SELINUX_LABEL
+arch/arm/configs/selinux_defconfig:23:warning: override: reassigning to symbol EXFAT_VIRTUAL_XATTR
+arch/arm/configs/selinux_defconfig:24:warning: override: reassigning to symbol ECRYPT_FS_VIRTUAL_FAT_XATTR
+arch/arm/configs/selinux_defconfig:25:warning: override: reassigning to symbol SDCARD_FS_XATTR
+arch/arm/configs/selinux_defconfig:26:warning: override: reassigning to symbol SEC_SELINUX
 warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
 boolean symbol SND_SOC_MAX98506 tested for 'm'? test forced to 'n'
 KCONFIG_SELINUX(arch/arm/configs/selinux_defconfig)
 KCONFIG_LOG_SELINUX((null))
 KCONFIG_TIMA((null))
-KCONFIG_VARIANT(arch/arm/configs/msm8226-sec_ms013g_eur_defconfig)
+KCONFIG_VARIANT((null))
 KCONFIG_DEBUG((null))
 #
 # configuration written to .config
 #
 make: Leaving directory `/mnt/G7102_MM_SWA_Opensource'
 make: Entering directory `/mnt/G7102_MM_SWA_Opensource'
-  GEN     /mnt/okernel/ms013g_eur/Makefile
+  GEN     /mnt/okernel/ms013g/Makefile
 scripts/kconfig/conf --silentoldconfig Kconfig
 sound/soc/codecs/audience/Kconfig:40:warning: type of 'SND_SOC_ES_SLIM' redefined from 'boolean' to 'tristate'
 sound/soc/codecs/audience/Kconfig:43:warning: type of 'SND_SOC_ES_I2C' redefined from 'boolean' to 'tristate'
@@ -56,10 +63,7 @@ sound/soc/codecs/audience/Kconfig:41:warning: choice value used outside its choi
 warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
 warning: (SND_SOC_MSM8226) selects DOLBY_DAP which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_MSM8974)
 boolean symbol SND_SOC_MAX98506 tested for 'm'? test forced to 'n'
-#
-# configuration written to .config
-#
-  GEN     /mnt/okernel/ms013g_eur/Makefile
+  GEN     /mnt/okernel/ms013g/Makefile
   CHK     include/linux/version.h
 /mnt/G7102_MM_SWA_Opensource/drivers/gpu/gpu_sysfs/Kbuild:29: **** Make sure target file is defined. Check the TARGET and GPU configs in Makefile and Kernel Config. Module won't work without target file. ****
   Using /mnt/G7102_MM_SWA_Opensource as source for kernel
@@ -69,24 +73,120 @@ make[2]: `include/generated/mach-types.h' is up to date.
   CALL    /mnt/G7102_MM_SWA_Opensource/scripts/checksyscalls.sh
 grep: /mnt/G7102_MM_SWA_Opensource/scripts/../arch/x86/syscalls/syscall_32.tbl: No such file or directory
   CHK     include/generated/compile.h
-  GEN     .version
-  CHK     include/generated/compile.h
-  UPD     include/generated/compile.h
-  CC      init/version.o
-  LD      init/built-in.o
-  LD      .tmp_vmlinux1
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 6 of arch/arm/crypto/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 82 of arch/arm/mach-msm/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 527 of mm/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 1128 of fs/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 165 of security/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 51 of crypto/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 418 of block/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 288 of lib/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 74 of drivers/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 6 of sound/built-in.o is not in EXIDX output section
-/mnt/G7102_MM_SWA_Opensource/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-ld: warning: unwinding may not work because EXIDX input section 858 of net/built-in.o is not in EXIDX output section
-drivers/built-in.o:radio-iris.c:function iris_fops_open: error: undefined reference to 'radio_hci_smd_init'
-make[1]: *** [.tmp_vmlinux1] Error 1
-make: *** [sub-make] Error 2
+  Building modules, stage 2.
+  MODPOST 15 modules
 make: Leaving directory `/mnt/G7102_MM_SWA_Opensource'
+rm files in : ../okernel/ms013g/arch/arm/boot/*-zImage
+rm files in : ../okernel/ms013g/arch/arm/boot/*.dtb
+
+dts : /mnt/G7102_MM_SWA_Opensource/arch/arm/boot/dts/msm8226/msm8226-sec-ms013geur-r00.dts
+dtb : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r00.dtb
+out : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r00-zImage
+
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@50 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@36 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@36
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@36
+
+dts : /mnt/G7102_MM_SWA_Opensource/arch/arm/boot/dts/msm8226/msm8226-sec-ms013geur-r01.dts
+dtb : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r01.dtb
+out : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r01-zImage
+
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@50 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@36 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@36
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@36
+
+dts : /mnt/G7102_MM_SWA_Opensource/arch/arm/boot/dts/msm8226/msm8226-sec-ms013geur-r02.dts
+dtb : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r02.dtb
+out : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r02-zImage
+
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@50 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@36 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@36
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@36
+
+dts : /mnt/G7102_MM_SWA_Opensource/arch/arm/boot/dts/msm8226/msm8226-sec-ms013geur-r03.dts
+dtb : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r03.dtb
+out : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r03-zImage
+
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@50 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@36 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@36
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@36
+
+dts : /mnt/G7102_MM_SWA_Opensource/arch/arm/boot/dts/msm8226/msm8226-sec-ms013geur-r04.dts
+dtb : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r04.dtb
+out : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r04-zImage
+
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@50 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@36 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@36
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@36
+
+dts : /mnt/G7102_MM_SWA_Opensource/arch/arm/boot/dts/msm8226/msm8226-sec-ms013geur-r05.dts
+dtb : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r05.dtb
+out : ../okernel/ms013g/arch/arm/boot/msm8226-sec-ms013geur-r05-zImage
+
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@50 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (reg_format): "reg" property in /soc/i2c@20/qcom,actuator@36 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@50
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@20/qcom,actuator@36
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@20/qcom,actuator@36
+
+=================================
+START : FUNC_BUILD_DTIMAGE_TARGET
+=================================
+
+DT image target : ../okernel/ms013g/dt.img
+/mnt/G7102_MM_SWA_Opensource/dtbtool/ -o ../okernel/ms013g/dt.img -s 2048 		-p ../okernel/ms013g/scripts/dtc/ ../okernel/ms013g/arch/arm/boot/
+./build_msm8x26.sh: line 134: /mnt/G7102_MM_SWA_Opensource/dtbtool/: Is a directory
+chmod: cannot access '../okernel/ms013g/dt.img': No such file or directory
+
+=================================
+END   : FUNC_BUILD_DTIMAGE_TARGET
+=================================
+
+
+=================================
+END   : FUNC_BUILD_KERNEL
+=================================
+
+
+====================================
+  START : FUNC_EXT_MODULES_TARGET
+====================================
+
+'../okernel/ms013g/arch/arm/oprofile/oprofile.ko' -> '../mkernel/ms013g/oprofile.ko'
+'../okernel/ms013g/arch/arm/mach-msm/msm-buspm-dev.ko' -> '../mkernel/ms013g/msm-buspm-dev.ko'
+'../okernel/ms013g/arch/arm/mach-msm/dma_test.ko' -> '../mkernel/ms013g/dma_test.ko'
+'../okernel/ms013g/drivers/spi/spidev.ko' -> '../mkernel/ms013g/spidev.ko'
+'../okernel/ms013g/drivers/crypto/msm/qcedev.ko' -> '../mkernel/ms013g/qcedev.ko'
+'../okernel/ms013g/drivers/crypto/msm/qcrypto.ko' -> '../mkernel/ms013g/qcrypto.ko'
+'../okernel/ms013g/drivers/input/evbug.ko' -> '../mkernel/ms013g/evbug.ko'
+'../okernel/ms013g/drivers/char/rdbg.ko' -> '../mkernel/ms013g/rdbg.ko'
+'../okernel/ms013g/drivers/mmc/card/mmc_test.ko' -> '../mkernel/ms013g/mmc_test.ko'
+'../okernel/ms013g/drivers/mmc/card/mmc_block_test.ko' -> '../mkernel/ms013g/mmc_block_test.ko'
+'../okernel/ms013g/drivers/media/video/gspca/gspca_main.ko' -> '../mkernel/ms013g/gspca_main.ko'
+'../okernel/ms013g/drivers/scsi/scsi_wait_scan.ko' -> '../mkernel/ms013g/scsi_wait_scan.ko'
+'../okernel/ms013g/drivers/staging/prima/wlan.ko' -> '../mkernel/ms013g/wlan.ko'
+'../okernel/ms013g/block/test-iosched.ko' -> '../mkernel/ms013g/test-iosched.ko'
+'../okernel/ms013g/crypto/ansi_cprng.ko' -> '../mkernel/ms013g/ansi_cprng.ko'
+
+====================================
+  END : FUNC_EXT_MODULES_TARGET
+====================================
+
+'../okernel/ms013g/arch/arm/boot/zImage' -> '../okernel/ms013g/zImage'
+Total compile time is 8 seconds
